@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+  <!-- Cabeçalho do site com menu principal para navegar entre as seções -->
   <header class="topo" id="inicio">
     <nav class="nav">
       <a class="marca" href="#inicio">Byanca</a>
@@ -20,6 +21,7 @@
       </ul>
     </nav>
 
+    <!-- Parte principal de apresentação logo no início da página -->
     <section class="hero">
       <div class="hero-texto">
         <p class="etiqueta">Portfólio pessoal</p>
@@ -33,12 +35,14 @@
         </div>
       </div>
       <div class="hero-foto">
-        <img src="assets/avatar.svg" alt="Ilustração de perfil feminino representando Byanca Balbino Gonçalves">
+        <!-- Foto de perfil da usuária -->
+        <img src="assets/avatar.svg" alt="Foto de Byanca Balbino Gonçalves">
       </div>
     </section>
   </header>
 
   <main>
+    <!-- Seção com apresentação pessoal e resumo das habilidades -->
     <section class="secao" id="sobre">
       <div class="titulo-secao">
         <p>Sobre Mim</p>
@@ -70,6 +74,7 @@
       </div>
     </section>
 
+    <!-- Seção com formação acadêmica e experiência profissional resumida -->
     <section class="secao suave" id="formacao">
       <div class="titulo-secao">
         <p>Formação</p>
@@ -109,6 +114,7 @@
       </div>
     </section>
 
+    <!-- Seção reservada para mostrar os projetos e workshops -->
     <section class="secao" id="portfolio">
       <div class="titulo-secao">
         <p>Portfólio</p>
@@ -149,6 +155,7 @@
       </article>
     </section>
 
+    <!-- Seção de contato com formulário obrigatório -->
     <section class="secao suave" id="contato">
       <div class="titulo-secao">
         <p>Contato</p>
@@ -164,22 +171,27 @@
           <p><strong>Objetivo:</strong> oportunidade na área de Tecnologia da Informação</p>
         </article>
 
-        <form class="card formulario" action="#" method="post">
+        <!-- Formulário com campos obrigatórios -->
+        <form class="card formulario" id="formulario-contato" action="#" method="post">
           <label for="nome">Nome</label>
-          <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
 
           <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
 
           <label for="mensagem">Mensagem</label>
-          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
 
           <button type="submit" class="botao primario">Enviar mensagem</button>
+
+          <!-- Mensagem exibida depois do envio do formulário -->
+          <p class="mensagem-sucesso" id="mensagem-sucesso" aria-live="polite"></p>
         </form>
       </div>
     </section>
   </main>
 
+  <!-- Rodapé simples com identificação do portfólio -->
   <footer class="rodape">
     <p>© 2026 - Portfólio de Byanca Balbino Gonçalves</p>
   </footer>
