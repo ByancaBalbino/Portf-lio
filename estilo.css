@@ -275,3 +275,11 @@ main {
     display: flex;
   }
 }
+
+
+/* Mensagem exibida depois que o formulário é enviado com sucesso */
+.mensagem-sucesso {
+  margin: 0.35rem 0 0;
+  color: #2f7a4d;
+  font-weight: 700;
+}
